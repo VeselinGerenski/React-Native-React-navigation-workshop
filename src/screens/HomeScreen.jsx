@@ -1,12 +1,11 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
 
-export default function HomeScreen() {
+export default function HomeScreen({navigation}) {
 
   return (
-    <View style={styles.container}>
-      <Text>Restaurant App</Text>
-
-    </View>
+    <ScrollView >
+    <Text onPress={() => navigation.navigate("Stack")}>Click to Open the stack screen</Text>
+    </ScrollView>
   )
 };
 
